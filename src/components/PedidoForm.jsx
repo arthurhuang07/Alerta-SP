@@ -8,7 +8,7 @@ export default function PedidoForm({ inicial, onSalvar, onCancelar }) {
   const [form, setForm] = useState(inicial ?? VAZIO)
   const [erros, setErros] = useState({})
 
-  const muda = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+  const atualizarCampo = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const enviar = async (e) => {
     e.preventDefault()
