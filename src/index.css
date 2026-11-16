@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --color-tinta: #0b2a3c;
+  --color-agua: #1f6f8b;
+  --color-alerta: #c2410c;
+  --color-fundo: #eef3f5;
+}
+
+body { @apply bg-fundo font-sans text-slate-900; }
+:focus-visible { outline: 3px solid var(--color-alerta); outline-offset: 2px; }
