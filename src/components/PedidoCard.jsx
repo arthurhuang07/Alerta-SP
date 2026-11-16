@@ -6,7 +6,7 @@ export default function PedidoCard({ pedido, onStatus, onEditar, onExcluir }) {
     pedido.status === 'aberto' ? ['atendimento', 'Iniciar atendimento']
     : pedido.status === 'atendimento' ? ['resolvido', 'Marcar como resolvido']
     : null
-  const botao = 'rounded-lg border border-slate-500 px-3 py-1 text-sm font-bold hover:bg-slate-100'
+  const classeBotao = 'rounded-lg border border-slate-500 px-3 py-1 text-sm font-bold hover:bg-slate-100'
 
   return (
     <li className="space-y-2 rounded-xl border border-slate-300 bg-white p-4">
