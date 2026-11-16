@@ -10,7 +10,7 @@ export default function PedidoForm({ inicial, onSalvar, onCancelar }) {
 
   const atualizarCampo = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
-  const enviar = async (e) => {
+  const enviarFormulario = async (e) => {
     e.preventDefault()
     const novos = {}
     if (form.bairro.trim().length < 3) novos.bairro = 'Informe o bairro (mínimo 3 letras).'
@@ -22,7 +22,7 @@ export default function PedidoForm({ inicial, onSalvar, onCancelar }) {
   }
 
   return (
-    <form onSubmit={enviar} noValidate className="space-y-4 rounded-xl border border-slate-300 bg-white p-5">
+    <form onSubmit={enviarFormulario} noValidate className="space-y-4 rounded-xl border border-slate-300 bg-white p-5">
       <h2 className="text-xl font-bold text-tinta">{inicial ? 'Editar pedido' : 'Novo pedido de ajuda'}</h2>
 
       <label className="block font-bold">
