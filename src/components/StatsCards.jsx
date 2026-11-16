@@ -1,7 +1,7 @@
 export default function StatsCards({ pedidos }) {
   const contarPorStatus = (status) => pedidos.filter((pedido) => pedido.status === status).length
   const resolvidos = conta('resolvido')
-  const pct = pedidos.length ? Math.round((resolvidos / pedidos.length) * 100) : 0
+  const percentualResolvidos = pedidos.length ? Math.round((resolvidos / pedidos.length) * 100) : 0
   const itens = [['Pedidos', pedidos.length], ['Abertos', conta('aberto')], ['Em atendimento', conta('atendimento')], ['Resolvidos', resolvidos]]
 
   return (
