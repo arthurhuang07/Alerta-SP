@@ -1,7 +1,7 @@
 import { URGENCIAS, STATUS } from '../data/constantes'
 
 export default function PedidoCard({ pedido, onStatus, onEditar, onExcluir }) {
-  const u = URGENCIAS[pedido.urgencia] ?? URGENCIAS.media
+  const urgenciaAtual = URGENCIAS[pedido.urgencia] ?? URGENCIAS.media
   const proximo =
     pedido.status === 'aberto' ? ['atendimento', 'Iniciar atendimento']
     : pedido.status === 'atendimento' ? ['resolvido', 'Marcar como resolvido']
