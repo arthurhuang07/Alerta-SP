@@ -25,9 +25,9 @@ export default function App() {
     return ok
   }
 
-  const excluir = (id) => {
-    if (window.confirm('Excluir este pedido?')) remover(id)
-  }
+  const excluirPedido = (id) => {
+  if (window.confirm('Excluir este pedido?')) remover(id)
+}
 
   return (
     <>
@@ -52,7 +52,7 @@ export default function App() {
               carregando={carregando}
               onStatus={(p, status) => atualizar(p, { status })}
               onEditar={setEditando}
-              onExcluir={excluir}
+              onExcluir={excluirPedido}
             />
           </div>
         </section>
