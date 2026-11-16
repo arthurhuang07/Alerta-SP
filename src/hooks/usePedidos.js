@@ -6,7 +6,6 @@ export function usePedidos() {
   const [carregando, setCarregando] = useState(true)
   const [erro, setErro] = useState('')
 
-  // roda a acao; em caso de falha guarda a mensagem e devolve undefined
   const executar = async (acao) => {
     setErro('')
     try {
