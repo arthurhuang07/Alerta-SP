@@ -1,4 +1,4 @@
-const CONTATOS = [['Defesa Civil', '199'], ['Bombeiros', '193'], ['SAMU', '192']]
+const CONTATOS_EMERGENCIA = [['Defesa Civil', '199'], ['Bombeiros', '193'], ['SAMU', '192']]
 
 export default function ContatosEmergencia() {
   return (
