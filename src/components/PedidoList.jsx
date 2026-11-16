@@ -7,9 +7,15 @@ export default function PedidoList({ pedidos, carregando, onStatus, onEditar, on
   }
   return (
     <ul className="space-y-3">
-      {pedidos.map((p) => (
-        <PedidoCard key={p.id} pedido={p} onStatus={onStatus} onEditar={onEditar} onExcluir={onExcluir} />
-      ))}
+      {pedidos.map((pedidoAtual) => (
+  <PedidoCard
+    key={pedidoAtual.id}
+    pedido={pedidoAtual}
+    onStatus={onStatus}
+    onEditar={onEditar}
+    onExcluir={onExcluir}
+  />
+))}
     </ul>
   )
 }
