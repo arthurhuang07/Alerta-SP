@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { pedidosApi } from '../services/pedidosApi'
 
-// Custom hook 1: estado + operacoes de CRUD dos pedidos de ajuda
 export function usePedidos() {
   const [pedidos, setPedidos] = useState([])
   const [carregando, setCarregando] = useState(true)
