@@ -1,6 +1,6 @@
 import { STATUS, URGENCIAS } from '../data/constantes'
 
-const campo = 'mt-1 w-full rounded-lg border border-slate-500 bg-white p-2'
+const classeCampo = 'mt-1 w-full rounded-lg border border-slate-500 bg-white p-2'
 
 export default function FiltroBar({ filtros }) {
   const { busca, setBusca, status, setStatus, urgencia, setUrgencia } = filtros
