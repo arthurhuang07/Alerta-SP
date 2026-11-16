@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react'
 import { URGENCIAS } from '../data/constantes'
 
-// Custom hook 2: busca, filtros e ordenacao (mais urgentes primeiro)
 export function useFiltros(pedidos) {
   const [busca, setBusca] = useState('')
   const [status, setStatus] = useState('todos')
