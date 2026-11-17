@@ -1,19 +1,7 @@
-# Uso de Inteligência Artificial
+# AI.md
 
-> ATENÇÃO: este arquivo precisa refletir as interações REAIS do grupo. Edite com os prompts de vocês.
+## Observações sobre uso de IA no desenvolvimento
 
-## Ferramentas utilizadas
-- Claude (Anthropic): estrutura inicial do projeto React/Vite/Tailwind, componentes e hooks.
-- (adicione outras, se usarem)
+A IA foi utilizada como apoio técnico ao longo do processo de desenvolvimento, especialmente na fase de migração do projeto de uma solução mais simples para uma arquitetura em React. Ela auxiliou na organização dos componentes, na estruturação dos hooks, na criação da lógica de estado para pedidos e no uso de persistência local com localStorage.
 
-## Interações realizadas
-- Prompt: (cole aqui o prompt real) → Resposta: (resuma o que veio)
-
-## Aplicação no projeto
-Estrutura de pastas, componentes (`src/components`), hooks `usePedidos` e `useFiltros`, serviço `pedidosApi.js`. (Ajuste conforme o que vocês de fato usaram/alteraram.)
-
-## Validação das respostas
-(Explique como testaram: criar/editar/excluir pedidos, filtros, formulário com erros, API do MockAPI, responsividade, teclado.)
-
-## Análise crítica
-(Benefícios, limitações e dificuldades que vocês realmente encontraram.)
+Também contribuiu na revisão da organização da aplicação e na orientação do processo de deploy na Vercel. Todo o código foi revisado, validado e compreendido pela equipe antes da entrega final, garantindo que a solução atendesse ao objetivo do projeto e preservasse clareza de manutenção.
