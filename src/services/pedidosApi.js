@@ -1,5 +1,3 @@
-// Camada de acesso a dados: so aqui existe fetch/localStorage.
-// Com VITE_API_URL definida usa a API externa (MockAPI); sem ela, usa localStorage para testes.
 const BASE = import.meta.env.VITE_API_URL
 const KEY = 'sos-enchente-pedidos'
 

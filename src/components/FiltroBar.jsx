@@ -8,18 +8,18 @@ export default function FiltroBar({ filtros }) {
     <div className="grid gap-3 sm:grid-cols-3">
       <label className="font-bold">
         Buscar por bairro ou tipo
-        <input value={busca} onChange={(e) => setBusca(e.target.value)} className={campo} />
+        <input value={busca} onChange={(e) => setBusca(e.target.value)} className={classeCampo} />
       </label>
       <label className="font-bold">
         Status
-        <select value={status} onChange={(e) => setStatus(e.target.value)} className={campo}>
+        <select value={status} onChange={(e) => setStatus(e.target.value)} className={classeCampo}>
           <option value="todos">Todos</option>
           {Object.entries(STATUS).map(([k, r]) => <option key={k} value={k}>{r}</option>)}
         </select>
       </label>
       <label className="font-bold">
         Urgência
-        <select value={urgencia} onChange={(e) => setUrgencia(e.target.value)} className={campo}>
+        <select value={urgencia} onChange={(e) => setUrgencia(e.target.value)} className={classeCampo}>
           <option value="todas">Todas</option>
           {Object.entries(URGENCIAS).map(([k, u]) => <option key={k} value={k}>{u.rotulo}</option>)}
         </select>

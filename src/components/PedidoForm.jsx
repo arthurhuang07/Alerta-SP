@@ -27,26 +27,26 @@ export default function PedidoForm({ inicial, onSalvar, onCancelar }) {
 
       <label className="block font-bold">
         Tipo de ajuda
-        <select name="tipo" value={form.tipo} onChange={muda} className={campo}>
+        <select name="tipo" value={form.tipo} onChange={atualizarCampo} className={campo}>
           {TIPOS.map((t) => <option key={t}>{t}</option>)}
         </select>
       </label>
 
       <label className="block font-bold">
         Bairro
-        <input name="bairro" value={form.bairro} onChange={muda} className={campo} placeholder="Ex.: Jardim Pantanal" />
+        <input name="bairro" value={form.bairro} onChange={atualizarCampo} className={campo} placeholder="Ex.: Jardim Pantanal" />
         {erros.bairro && <span role="alert" className="block text-sm font-normal text-red-700">{erros.bairro}</span>}
       </label>
 
       <label className="block font-bold">
         O que está acontecendo?
-        <textarea name="descricao" value={form.descricao} onChange={muda} rows={3} className={campo} />
+        <textarea name="descricao" value={form.descricao} onChange={atualizarCampo} rows={3} className={campo} />
         {erros.descricao && <span role="alert" className="block text-sm font-normal text-red-700">{erros.descricao}</span>}
       </label>
 
       <label className="block font-bold">
         Urgência
-        <select name="urgencia" value={form.urgencia} onChange={muda} className={campo}>
+        <select name="urgencia" value={form.urgencia} onChange={atualizarCampo} className={campo}>
           {Object.entries(URGENCIAS).map(([k, u]) => <option key={k} value={k}>{u.rotulo}</option>)}
         </select>
       </label>
